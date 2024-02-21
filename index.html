@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>HOLA BIENVENIDOS</h1>
+    <div class="txt">
+      <p>Esta página te ayudará a calcular tu IMC</p>
+      <p>Favor de ingresar los datos solicitados</p>
+    </div>
+
+    <div class="List">
+      <ul>
+        <li>
+          <label for="nombre">Por favor ingresa tu nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+        </li>
+        <li>
+            <label for="fecha">Ingrea tu fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="date" />
+          </li>
+        <li>
+          <label for="peso">Ingresa tu peso en kg:</label>
+          <input type="text" id="peso" name="peso" />
+        </li>
+        <li>
+          <label for="altura">Ingresa tu altura en mts:</label>
+          <input type="text" id="altura" name="altura" />
+        </li>
+      </ul>
+      <button onclick="calcularIMC()">Calcular IMC</button>
+      <button onclick="resetearFormulario()">Borrar datos</button>
+
+      <div id="resultadoContainer">
+        <p id="resultadoIMC"></p>
+      </div>
+    </div>
+  </body>
+</html>
